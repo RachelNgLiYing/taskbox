@@ -22,7 +22,7 @@ const meta = {
   component: InboxScreen,
   title: 'InboxScreen',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
-  tags: ['!autodocs'],
+  tags: ['autodocs'],
 } satisfies Meta<typeof InboxScreen>;
 
 export default meta;
@@ -63,5 +63,6 @@ export const Error: Story = {
         }),
       ],
     },
+    docs: { disable: true }
   },
 };
